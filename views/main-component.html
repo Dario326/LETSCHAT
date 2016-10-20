@@ -1,0 +1,39 @@
+<h1><span><i class="fa fa-comments" aria-hidden="true"></i>
+</span>Let's Chat</h1>
+
+<div class="container-fluid background">
+    <!-- note the 'autoplay' -->
+    <div class="row">
+        <div class="col-md-4">
+        <p>Your Friend</p>
+
+        <video id="theirVideo" class="theirVideo" autoplay></video>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <p>You</p>
+        <video id="myVideo" muted="true" class="myVideo" autoplay></video>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <h2>Controls</h2>
+
+
+        <div class="col-md-12 col-md-offset-2">
+            <div class="col-md-6">
+            <h3>YOUR ID: </h3>
+            <span id="myPeerId">...</span>
+            </div>
+            <div class="col-md-3">
+                <h3><span><i class="fa fa-phone fa-1x" aria-hidden="true" ></i></span>Make A Call</h3><br>
+                <input type="text" placeholder="Call user id..." ng-model="remotePeerId">
+                <button class="btn btn-primary" ng-click="makeCall(remotePeerId)">Call</button>
+                <button class="btn btn-warning" ng-click="endCall(remotePeerId)">End Call</button>
+            </div>
+
+        </div>
+
+
+</div>
+</div>
